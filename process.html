@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tattoo Guiden</title>
+    <link rel="stylesheet" href="generelcss/generel.css" />
+    <link rel="stylesheet" href="layoutcss/layout.css" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="icon" href="favicon/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="favicon/web-app-manifest-192x192.png" />
+    <link rel="manifest2" href="favicon/web-app-manifest-512x512.png" />
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+
+      /* screen reader text */
+      .sr-only {
+        position: absolute;
+        left: -9999px;
+      }
+
+      .menu-button {
+        font-size: 1.8rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      /* dialog */
+      .menu {
+        border: none;
+        padding: 2rem;
+        width: 250px;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* backdrop */
+      .menu::backdrop {
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      .menu ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .menu a {
+        display: block;
+        padding: 10px 0;
+        text-decoration: none;
+      }
+
+      .close-button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    </style>
+    <style>
+      .hero01 {
+        background-image: url("Indholdsbilleder/Logo/langbaggrund.webp");
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <button class="menu-button" aria-controls="menu-dialog">
+        ☰
+        <span class="sr-only">Åbn menu</span>
+      </button>
+      <dialog id="menu-dialog" class="menu">
+        <button class="close-button">✕</button>
+
+        <nav>
+          <ul>
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="stilarter.html">Stilarter</a></li>
+            <li><a href="aftercare.html">Aftercare </a></li>
+            <li><a href="process.html">Process</a></li>
+          </ul>
+        </nav>
+      </dialog>
+      <h1 class="headeroverskrift">Tattoo Guiden</h1>
+      <img class="Logo" src="Indholdsbilleder/Prototype/apple-touch-icon.webp" alt="logo" />
+    </header>
+    <main>
+      <section class="grid_1-1-1">
+        <div class="hero01">
+          <h1>Process</h1>
+        </div>
+        <div class="sortbjælke"></div>
+        <div class="hvid_boksprocess">
+          <div class="process_overskrifter">
+            <h2>Her får du en detaljeret trin-for-trin beskrivelse ved hele processen når du skal blive tattoveret.</h2>
+          </div>
+          <div class="tekst_process">
+            <h3>1. Først finder du ud af hvad du vil have tatoveret:</h3>
+            <ul>
+              <li>En god ide er at tænke over motiv (fx tekst, symbol, dyr, portræt).</li>
+              <li>Størrelse på tatoveringen.</li>
+              <li>Placering på kroppen.</li>
+              <li>Stil (fx realistisk, minimal, old school).</li>
+            </ul>
+            <p>Mange finder inspiration på instagram og pinterest. Men du kan også tale med din tatovør, de har helt klart en masse gode ideer!</p>
+            <h3>2. Booke en tid:</h3>
+            <p>Du kan kontakte tatovøren via:</p>
+            <ul>
+              <li>Instagram.</li>
+              <li>Hjemmeside.</li>
+              <li>Mail.</li>
+              <li>Eller besøge dem i deres studie.</li>
+            </ul>
+            <p>Her fortæller du:</p>
+            <ul>
+              <li>Hvad du kunne tænke dig.</li>
+              <li>Hvor på kroppen.</li>
+              <li>Hvor stor/lille den skal være.</li>
+              <li>Kommer med et evt. reference billede elelr to.</li>
+            </ul>
+            <p>Tatovøren vil typisk komme med:</p>
+            <ul>
+              <li>Pris/prisoverslag.</li>
+              <li>Hvor lang tid det kommer til at tage.</li>
+              <li>Dato og tid for tatoveringen.</li>
+              <li>Og for det meste depositum (forudbetaling).</li>
+            </ul>
+            <p>Depositum ligger normalt mellem 500-1500 kr, og trækkes fra den endelige pris senere.</p>
+            <h3>3. Design af tatoveringen:</h3>
+            <p>Før din tid kan du få designet tilsendt, eller se det på dagen. Det er noget du skal aftale med din tatovør.</p>
+            <p>På selve dagen kan i justere designet sammen.</p>
+            <p>Her kan du ændre:</p>
+            <ul>
+              <li>Størrelse.</li>
+              <li>Små detaljer.</li>
+              <li>Placering.</li>
+            </ul>
+            <p>Husk på at det er din krop! Så vær sikker på at det i finder ud af sammen er noget du er tilfreds med.</p>
+            <h3>4. Forberedelse på tatoveringsdagen:</h3>
+            <p>Inden du ankommer til studiet:</p>
+            <ul>
+              <li>Få en masse væske og mad. Gerne med mange proteiner og højt sukker indhold.</li>
+              <li>Tag gerne slik, sodavand og/eller snacks til at holde dit blodsukker stabilt.</li>
+              <li>Få gerne en masse søvn.</li>
+              <li>Undgå alkohol, stoffer og blodfortyndende medicin (som smertestillende) 24-48 timer før, da det øger blødning.</li>
+              <li>Evt. høretelefoner, hvis din tatovering tager lang tid.</li>
+            </ul>
+            <p>Når du ankommer til studiet vil tatovøren:</p>
+            <ul>
+              <li>Desinficere arbejdsområdet.</li>
+              <li>Sætte sterile nåle i maskinen.</li>
+              <li>Klargøre blæk.</li>
+              <li>Gør huden klar.</li>
+            </ul>
+            <p>Hvordan gør tatovøren huden klar?</p>
+            <ul>
+              <li>Barberer, så selv små hår fjernes.</li>
+              <li>Renser huden med sprit eller antiseptisk væske.</li>
+            </ul>
+            <p>Dette er vigtigt for hygiejne og præcision for tatovøren.</p>
+            <h3>5. Stencil:</h3>
+            <p>Nu skal stencilen gøre klar og på huden. (En stencil er en midlertidig kopi af tatoveringen på huden, så tatoværen har en guide at tatovere ud fra.)</p>
+            <p>Processen:</p>
+            <ul>
+              <li>Designet bliver printet på stencilpapir.</li>
+              <li>Tatovøren smører din hud med gel der er beregnet til stencils.</li>
+              <li>Papiret bliver trykket på din hud.</li>
+              <li>Papiret fjernes igen.</li>
+            </ul>
+            <p>Nu kan du se designet i spejlet, flytte den, ændre størrelse eller placering. Først nu er siger ok for det hele, vil tatovøren starte selve tatoveringen.</p>
+            <h3>6. Selve tatoveringen:</h3>
+            <p>Tatovøren bruger en tatoverings maskine med nåle. Den stikker blæk ned i din huds dermis-lag (det midterste hudlag). Det gør, at tatoveringen bliver permanent.</p>
+            <p>Alle tatovører er forskellige, men den mest almindelige måde at lave en tatovering er:</p>
+            <ul>
+              <li>Outline (linjer).</li>
+              <li>Shading (skygger).</li>
+              <li>Farve (hvis du skal have farve i).</li>
+            </ul>
+            <h3>7. Under tatoveringen:</h3>
+            <p>Når du bliver tatoveret vil tatovøren undervejs:</p>
+            <ul>
+              <li>Tørre overskydende blæk væk.</li>
+              <li>Rengøre med sæbe (fx grøn sæbe “tattoo soap”).</li>
+              <li>Holde huden stram.</li>
+              <li>Holde pauser.</li>
+            </ul>
+            <p>Husk du har ret til så mange pauser som du har brug for! Du skal ikke være generet eller føle dig forlegen ved at spørge.</p>
+            <p>En tatovering kan tage alt mellem 10 minutter til flere sessioner. Det er noget du kan høre din tatovør om, hvor lang tid de mener det vil tage.</p>
+            <h3>8. Når din tatovering er færdig:</h3>
+            <ul>
+              <li>Tatovøren vil vaske området.</li>
+              <li>Måske tage billeder (med din samtykke).</li>
+              <li>Smøre salve på.</li>
+              <li>Dække tatoveringen med beskyttelsesfilm (fx plastfolie eller second skin).</li>
+            </ul>
+            <p>Nu er du klar til din (måske) første tatovering! Held og lykke.</p>
+            <p>Det eneste du mangler er aftercare, som er meget vigtigt! Det kan du læse mere uddybende om her:</p>
+          </div>
+          <div class="btn">
+            <a href="aftercare.html" class="aftercare_cta">Aftercare</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><p>&copy; 2026 Tattoo Guiden. Alle rettigheder forbeholdes Julie Jacobsen.</p></footer>
+    <script>
+      const dialog = document.querySelector("#menu-dialog");
+      const openBtn = document.querySelector(".menu-button");
+      const closeBtn = document.querySelector(".close-button");
+
+      openBtn.addEventListener("click", () => dialog.showModal());
+      closeBtn.addEventListener("click", () => dialog.close());
+
+      dialog.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => dialog.close()));
+    </script>
+  </body>
+</html>

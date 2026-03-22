@@ -1,0 +1,336 @@
+@font-face {
+  font-family: "Font1";
+  src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Font2";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf) format("ttf");
+}
+
+header {
+  background-color: rgb(105, 115, 121);
+  padding: 0.5rem;
+  font-size: 16px;
+  color: #000000;
+  max-width: 100%;
+  height: 60px;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  word-spacing: 0.4rem;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "font1";
+  font-size: 35px;
+}
+
+h2 {
+  font-family: "font1";
+  font-size: 8px;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  font-family: "Font2";
+}
+
+h3 {
+  font-family: "font1";
+  font-size: 10px;
+}
+
+.cta-btn {
+  width: 60px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 8px 24px;
+  background-color: #ff721a;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0px 5px 15px black;
+  border: 2px solid white;
+  font-size: 22px;
+}
+
+.cirkel {
+  width: 650px;
+  height: 650px;
+
+  border-radius: 50%; /* gør formen til en cirkel */
+  display: flex;
+  justify-content: center; /* centrerer teksten vandret */
+  align-items: center; /* centrerer teksten lodret */
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cirkel02 {
+  width: 650px;
+  height: 650px;
+
+  border-radius: 50%; /* gør formen til en cirkel */
+  display: flex;
+  justify-content: center; /* centrerer teksten vandret */
+  align-items: center; /* centrerer teksten lodret */
+  font-size: 36px;
+  text-align: center;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hero01 {
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  font-size: 24px;
+}
+
+.hero01 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(70%);
+}
+
+.sortbjælke {
+  background-color: #000000;
+  height: 20px;
+  width: 100%;
+}
+
+.tekst_forside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  padding: 7rem;
+  word-spacing: 0.1rem;
+  line-height: 2.5rem;
+}
+
+.cta-btn2,
+.cta-btn3,
+.cta-btn4 {
+  width: 80px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 8px 24px;
+  background-color: rgb(255, 127, 30);
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0px 5px 15px black;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 16px;
+}
+
+footer {
+  background-color: rgb(105, 115, 121);
+  text-align: center;
+  padding: 1rem;
+  font-size: 14px;
+  color: #ffffff;
+}
+.tekst_stilarter {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  font-size: 22px;
+  padding: 2rem;
+  word-spacing: 0.1rem;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  display: block;
+  padding: 0.5rem;
+  margin-bottom: 5rem;
+  border-radius: 15px;
+}
+
+.stilarterbilleder img {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hero02 {
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  font-size: 25px;
+}
+
+.tekst_aftercare {
+  display: flex;
+  color: #000000;
+  font-size: 18px;
+  padding: 5rem;
+  word-spacing: 0.2rem;
+  line-height: 2.5rem;
+}
+
+.aftercare_overskrifter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 34px;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.hvid_boks {
+  background-color: #ffffff;
+  width: 1200px;
+  padding: 15px;
+  margin: 80px auto;
+  border-radius: 5%;
+}
+
+.grid_1-1-1 {
+  background-color: rgb(213, 213, 213);
+}
+
+.hvidboks2 {
+  background-color: #ffffff;
+  width: 1200px;
+  padding: 15px;
+  margin: 50px auto;
+  border-radius: 35px;
+}
+
+.hvid_boksprocess {
+  background-color: #ffffff;
+  width: 1200px;
+  padding: 15px;
+  margin: 80px auto;
+  border-radius: 35px;
+}
+
+.aftercare_cta {
+  width: 60px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 8px 24px;
+  background-color: rgb(255, 127, 30);
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  box-shadow: 0px 5px 15px black;
+  border: 2px solid white;
+}
+
+.tekst_process {
+  line-height: 2.5rem;
+  word-spacing: 0rem;
+  margin: 80px;
+}
+
+.process_overskrifter {
+  line-height: 1.5rem;
+  margin: 80px;
+  text-align: center;
+  word-spacing: 0.2rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 22px;
+  word-spacing: 0.2rem;
+}
+
+.Tribal {
+  text-align: center;
+}
+
+.Fineline {
+  text-align: center;
+}
+
+.OldSchool {
+  text-align: center;
+}
+
+.Japansk {
+  text-align: center;
+}
+
+.Black_Gray {
+  text-align: center;
+}
+
+.Dotwork_Geometrisk {
+  text-align: center;
+}
+
+.NewSchool {
+  text-align: center;
+}
+
+.Text {
+  text-align: center;
+}
+
+.Realism {
+  text-align: center;
+}
+
+.stilarterbilleder {
+  font-size: 16px;
+}

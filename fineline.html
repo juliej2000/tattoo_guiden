@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tattoo Guiden</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="generelcss/generel.css" />
+    <link rel="stylesheet" href="layoutcss/layout.css" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="icon" href="favicon/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="favicon/web-app-manifest-192x192.png" />
+    <link rel="manifest2" href="favicon/web-app-manifest-512x512.png" />
+
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+
+      /* screen reader text */
+      .sr-only {
+        position: absolute;
+        left: -9999px;
+      }
+
+      .menu-button {
+        font-size: 1.8rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      /* dialog */
+      .menu {
+        border: none;
+        padding: 2rem;
+        width: 250px;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* backdrop */
+      .menu::backdrop {
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      .menu ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .menu a {
+        display: block;
+        padding: 10px 0;
+        text-decoration: none;
+      }
+
+      .close-button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    </style>
+    <style>
+      .hero01 {
+        background-image: url("Indholdsbilleder/Logo/langbaggrund.webp");
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <button class="menu-button" aria-controls="menu-dialog">
+        ☰
+        <span class="sr-only">Åbn menu</span>
+      </button>
+      <dialog id="menu-dialog" class="menu">
+        <button class="close-button">✕</button>
+
+        <nav>
+          <ul>
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="stilarter.html">Stilarter</a></li>
+            <li><a href="aftercare.html">Aftercare </a></li>
+            <li><a href="process.html">Process</a></li>
+          </ul>
+        </nav>
+      </dialog>
+      <h1 class="headeroverskrift">Tattoo Guiden</h1>
+      <img class="Logo" src="Indholdsbilleder/Prototype/apple-touch-icon.webp" alt="logo" />
+    </header>
+    <main>
+      <section class="grid_1-1-1">
+        <div class="hero01">
+          <h1>Fineline</h1>
+        </div>
+
+        <div class="sortbjælke"></div>
+        <div class="hvidboks2">
+          <div class="tekst_stilarter">
+            <p>Fineline er kendetegnet ved meget tynde, præcise linjer og små detaljer. Stilen giver et let, minimalistisk og elegant udtryk.</p>
+          </div>
+        </div>
+        <div class="stilarterbilleder02">
+          <img src="Indholdsbilleder/Fineline/nr1.webp" alt="Billed af ryggen på en kvinde med japansk tatovering i stil" class="fineline0" />
+          <img src="Indholdsbilleder/Fineline/nr2.webp" alt="Billede af ryggen på en mand med new school tattovering i stil" class="fineline2" />
+          <img src="Indholdsbilleder/Fineline/nr3.webp" alt="Billede af ryggen på en mand med realistisk tattovering i stil" class="fineline3" />
+          <img src="Indholdsbilleder/Fineline/nr5.webp" alt="Billed af ryggen på en man med dotwork/geometrisk tattovering i stil" class="fineline4" />
+          <img src="Indholdsbilleder/Fineline/nr4.webp" alt="Billed af en kvindes ben med tattovering i text stil" class="fineline5" />
+          <img src="Indholdsbilleder/Fineline/nr6.webp" alt="Billed af en kvindes ryg med tattovering i black/gray stil" class="fineline6" />
+          <img src="Indholdsbilleder/Fineline/nr7.webp" alt="Billed af en mands arm med tattovering i tribal stil" class="fineline7" />
+          <img src="Indholdsbilleder/Fineline/nr8.webp" alt="Billed af en kvindes ryg med tattovering i fineline stil" class="fineline8" />
+          <img src="Indholdsbilleder/Fineline/nr9.webp" alt="Billed af en mands arme fyldt med oldschool tattoveringer" class="fineline9" />
+        </div>
+      </section>
+    </main>
+    <footer><p>&copy; 2026 Tattoo Guiden. Alle rettigheder forbeholdes Julie Jacobsen.</p></footer>
+    <script>
+      const dialog = document.querySelector("#menu-dialog");
+      const openBtn = document.querySelector(".menu-button");
+      const closeBtn = document.querySelector(".close-button");
+
+      openBtn.addEventListener("click", () => dialog.showModal());
+      closeBtn.addEventListener("click", () => dialog.close());
+
+      dialog.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => dialog.close()));
+    </script>
+  </body>
+</html>
